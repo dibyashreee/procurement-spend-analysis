@@ -1,4 +1,4 @@
-# Procurement Spend Analysis: VA Federal Contract Data (FY2024)
+# Procurement Spend Analysis: Veterans Affairs Federal Contract Data (FY2024)
 
 I wanted a portfolio project that looked like real analyst work, not another Kaggle tutorial dashboard — so I pulled real federal contract data from USAspending.gov and worked through the mess procurement teams actually deal with: duplicate vendor records, unclear spend concentration, and no easy way to see where non-competed contracts might be worth a second look.
 
@@ -42,20 +42,17 @@ Out of 225 name pairs the algorithm flagged as "probably duplicates," a good chu
 In the end, 54 of those 225 pairs really were the same vendor spelled differently. The other 171 needed to stay separate. That gap is basically the whole argument for why this kind of cleanup can't be fully automated.
 
 ## How It's Organized
-
+```
 ├── sql/                  Setup → vendor cleanup → analysis views, numbered in order
-
 ├── python/               The cleaning, fuzzy-matching, and exploration notebook
-
 ├── excel/                A spend classification workbook
-
 ├── powerbi/              The interactive dashboard
-
 ├── data/
 │   ├── raw/              A small sample of the original data (full pull is 111K+ rows)
 │   ├── processed/        Sample of the cleaned version
 │   └── vendor_cleaning/  Every step of the vendor dedup process, kept as an audit trail
 └── docs/                 Full write-up, charts, dashboard images
+```
 
 ## How I Actually Built This
 
