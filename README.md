@@ -27,7 +27,7 @@ This is that project — 111,887 real Department of Veterans Affairs contract tr
 Full write-up with all the numbers: [`docs/Procurement_Spend_Analysis_Complete.docx`](docs/Procurement_Spend_Analysis_Complete.docx)
 
 ## Dashboard
-
+![Dashboard](docs/dashboard_screenshot.png)
 
 
 ## The Part I Actually Learned Something From
@@ -44,9 +44,13 @@ In the end, 54 of those 225 pairs really were the same vendor spelled differentl
 ## How It's Organized
 
 ├── sql/                  Setup → vendor cleanup → analysis views, numbered in order
+
 ├── python/               The cleaning, fuzzy-matching, and exploration notebook
-├── excel/                A spend classification workbook, for people who live in Excel
+
+├── excel/                A spend classification workbook
+
 ├── powerbi/              The interactive dashboard
+
 ├── data/
 │   ├── raw/              A small sample of the original data (full pull is 111K+ rows)
 │   ├── processed/        Sample of the cleaned version
